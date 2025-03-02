@@ -31,7 +31,7 @@ function Caculator() {
         setResultCal(temp)
     }
   return (
-    <div className=' w-[500px] p-8 shadow flex flex-col gap-8'>
+    <section className=' w-[500px] p-8 shadow flex flex-col gap-8 min-h-screen'>
         <h2 className='text-xl font-bold text-center'>Investment calculation</h2>
         <div className='flex flex-col gap-4'>
         <input value={money} onChange={(e)=>setMoney(e.target.value)} type="text" placeholder='Enter your money' className='bg-slate-200 shadow p-4 rounded-2xl' />
@@ -45,6 +45,7 @@ function Caculator() {
       
         <table>
             {
+                resultCal[0] &&
                 <thead>
                     <tr className=''>
                             <td>{resultCal[0].year}</td>
@@ -70,7 +71,7 @@ function Caculator() {
            </tbody>
         </table>
         </div>
-    </div>
+    </section>
   )
 }
 

@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='container p-4 flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center p-4 '>
       <Lab02a></Lab02a>
       <Caculator></Caculator>
     </div>
